@@ -138,7 +138,9 @@ function getColorByRisk(risk) {
           if (selectedRiskLevel === 'all' || selectedRiskLevel === riskLevel) {
             row.style.display = '';
             hasMatchingRow = true;
-            row.style.display = 'none';
+          }
+          else{
+            row.style.display='none';
           }
         }
         if (!hasMatchingRow) {
