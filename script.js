@@ -165,6 +165,9 @@ const searchInput = document.getElementById('searchInput');
 searchInput.addEventListener('input', function () {
     filterData(this.value);
 });
-
-
-
+document.addEventListener('DOMContentLoaded', function () {
+  var redirectButton = document.getElementById('btn');
+  redirectButton.addEventListener('click', function () {
+      window.location.href = 'index.html';
+  });
+});

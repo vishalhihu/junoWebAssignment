@@ -165,3 +165,9 @@ const searchInput = document.getElementById('searchInput1');
 searchInput.addEventListener('input', function () {
     filterData(this.value);
 });
+document.addEventListener('DOMContentLoaded', function () {
+  var redirectButton = document.getElementById('btn');
+  redirectButton.addEventListener('click', function () {
+      window.location.href = 'completed.html';
+  });
+});
